@@ -1,3 +1,3 @@
 ## Grassroots.AI
 
-Stay tuned.
+Data for good: Enabling resiliency for the Pacific.
