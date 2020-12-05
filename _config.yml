@@ -1,7 +1,2 @@
-theme: jekyll-theme-cayman
-
-# Google Analytics
-google_analytics: G-BM7VSM5SXM
-
-
-title: Grassroots AI
+name: cartobits
+markdown: kramdown

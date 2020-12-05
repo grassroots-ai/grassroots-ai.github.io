@@ -1,0 +1,88 @@
+<html>
+	<head>
+  	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  	<link href="/css/index.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+	<!-- containers -->
+	<div id="particles-js"></div>
+	<div class="container" id="container">
+  	<div class="col-centered col-xs-12" id="welcome">
+    	<div id="logo"><span class="text-nowrap">cartobits(<img src="//cartobits.github.io/static/dark_logo_75px.png" style="width:50px;height:50px;">)</span></div>
+    	<div style="height:20px;"></div>
+    	<p class="marketing-copy" id="sentence-1">rapidly assimilate data,</p>
+    	<p class="marketing-copy" id="sentence-2">develop insight,</p>
+    	<p class="marketing-copy" id="sentence-3">&amp; model your world.</p>
+    	<p class="marketing-copy" id="sentence-4"><span id="s4_a">100% open source.</span><span id="s4_b"> built to scale.</span></p>
+	<p class="marketing-copy" id="sentence-5"><span id="s5_a">at last,</span><span id="s5_b"> knowledge graphs for everyone.</span></p>
+    	<div class="row" style="height:20px;"></div>
+			<!-- mail signup -->
+  		<div id="mc_embed_signup">
+  			<form action="//cartobits.us14.list-manage.com/subscribe/post?u=ad0431a486b31829e0073211e&amp;id=1cf4c374f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      		<div id="mc_embed_signup_scroll">
+    				<label for="mce-EMAIL">Subscribe to learn more.</label>	
+						<div class="row">
+							<div class="col-sm-offset-4 col-sm-3">
+							<input style="width:100%;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							</div>
+      				<!-- anti-bot signups-->
+      				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ad0431a486b31829e0073211e_1cf4c374f4" tabindex="-1" value=""></div>
+      				<div class="col-sm-1">
+								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</div>
+											
+		      </div>
+  			</form>
+  		</div>
+		</div>
+  </div>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://cartobits.com/js/velocity.min.js"></script>
+	<script src="js/index.js"></script>
+  <script>
+    
+  /* Setup */
+  $logo = $("#logo");
+  $welcome = $("#welcome");
+  $sentence_1 = $("#sentence-1");
+  $sentence_2 = $("#sentence-2");
+  $sentence_3 = $("#sentence-3");
+  $s_4a = $("#s4_a");
+  $s_4b = $("#s4_b");
+  $s_5a = $("#s5_a");
+  $s_5b = $("#s5_b");		
+  $mail_chimp = $("#mc_embed_signup");
+	var screenWidth = window.screen.availWidth,
+		screenHeight = window.screen.availHeight,
+		chromeHeight = screenHeight - (document.documentElement.clientHeight || screenHeight);
+	  // reveal the sentences
+		$sentence_1.velocity({ opacity:[1, 0]}, {delay: 1500, duration: 1500});
+    $sentence_1.velocity({ opacity:[0.6, 1]}, {delay: 0, duration: 9000});
+    
+    $sentence_2.velocity({ opacity:[1, 0]}, {delay: 3000, duration: 1500});
+    $sentence_2.velocity({ opacity:[0.6, 1]}, {delay: 0, duration: 6000});
+    
+    $sentence_3.velocity({ opacity:[1, 0]}, {delay: 4500, duration: 1500});
+    $sentence_3.velocity({ opacity:[0.6, 1]}, {delay: 0, duration: 4500});
+    
+    $s_4a.velocity({ opacity:[1, 0]}, {delay: 6000, duration: 1500});
+		$s_4b.velocity({ opacity:[1, 0]}, {delay: 7500, duration: 1500});
+		$s_4a.velocity({ opacity:[0.6, 1]}, {delay: 0, duration: 3000});
+		$s_4b.velocity({ opacity:[0.6, 1]}, {delay: 0, duration: 3000});
+    
+		$s_5a.velocity({ opacity:[1, 0]}, {delay: 9000, duration: 1500});
+    $s_5b.velocity({ opacity:[1, 0]}, {delay: 10500, duration: 1500});		
+		
+		// finally reveal the logo + mail signup.
+		$logo.velocity({ opacity:[1, 0]}, {delay: 12000, duration: 1500});
+    $mail_chimp.velocity({ opacity:[1, 0]}, {delay: 12000, duration: 1500});
+
+  </script>
+</body>
+</html>
